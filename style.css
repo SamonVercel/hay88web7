@@ -19,12 +19,23 @@ html {
     background-repeat: repeat-x;
 }
 
+.btn {
+    background-image: url("./Image/LowBtn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.btn:hover {
+    background-image: url("./Image/brightBtn.png");
+}
+
 .background {
     height: 100vh;
     width: 100%;
     position: fixed;
     top: 0px;
-    background-image: url("./Image/blackGround.png");
+    background: #191b23;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -37,20 +48,28 @@ input:focus {
     border-color: rgba(201, 75, 75, 0.5);
 }
 
-.login-btn {
-    border: 1px solid #fece30;
-    border-radius: 32px;
-}
+.login-btn {}
 
 .signup-btn {
     color: #fece30;
-    border: 1px solid #fece30;
-    border-radius: 32px;
     text-align: center;
-    &nbsp;
     position: relative;
-    outline: none
 }
+
+.signup-btn:hover,
+.login-btn:hover {
+    color: #ffffff;
+    transform: scale(1.06);
+    transition: 0.1s;
+}
+
+.center-btn:hover {
+    color: #ffffff;
+    transform: scale(1.06);
+    transition: 0.1s;
+}
+
+.center-btn {}
 
 .btn--shockwave.is-active:before {
     content: "";
@@ -59,7 +78,7 @@ input:focus {
     left: 0;
     bottom: 0;
     right: 0;
-    border-radius: 16px;
+    border-radius: 50px;
     -webkit-animation: shockwave 1s 0.5s ease-out infinite;
     animation: shockwave 1s 0.5s ease-out infinite
 }
@@ -71,7 +90,7 @@ input:focus {
     left: 0;
     bottom: 0;
     right: 0;
-    border-radius: 16px;
+    border-radius: 50px;
     -webkit-animation: shockwave 1s 0.65s ease-out infinite;
     animation: shockwave 1s 0.65s ease-out infinite
 }
@@ -181,13 +200,13 @@ input:focus {
 @media screen and (max-width: 1024px) {
     nav {
         transition: 0.3s;
-        background-color: rgba(215, 137, 137, 0.8);
+        background-color: rgba(19, 19, 19, 0.8);
     }
 
     .menu {}
 
     .menu-box {
-        background-color: rgba(252, 243, 243, 0.9);
+        background-color: rgba(252, 243, 243, 0.93);
     }
 
     .menu li {
